@@ -1,0 +1,24 @@
+<br>
+<section>
+    <div class="container">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Course Title ...." aria-label="Search Course"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">Search</span>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<section class="results">
+    <div class="container">
+        <div class="container">
+            <div class="row row-cols-3">
+                <app-course-category *ngFor="let CourseCategory of CourseCategoryList"
+                    [CourseCategory]="CourseCategory"></app-course-category>
+            </div>
+        </div>
+
+    </div>
+</section>

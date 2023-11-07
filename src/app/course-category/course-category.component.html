@@ -1,0 +1,16 @@
+<div class="col card" style="border: none;">
+    <div style="border: 1px solid rgb(219, 219, 219); border-radius: 1%;" class="shadow-sm mb-5 bg-white rounded">
+        <img class="card-img-top" height="200" [src]="CourseCategory.photo"
+            alt="Exterior photo of {{CourseCategory.name}}">
+        <div class="card-body">
+            <h6 class="card-title"><u>{{ CourseCategory.name }} ({{ CourseCategory.category}})</u></h6>
+            <small>Teacher: <em>{{CourseCategory.teacher }}</em></small>
+
+        </div>
+        <div class="card-footer">
+            <a routerLink="/details/{{CourseCategory.id}}">
+                <span class="btn btn-info btn-block">Details</span>
+            </a>
+        </div>
+    </div>
+</div>

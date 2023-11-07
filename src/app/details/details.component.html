@@ -1,0 +1,25 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb mt-3">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="/course">Courses</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{courseCategory?.name}}</li>
+    </ol>
+</nav>
+<div class="card">
+    <img class="listing-photo" [src]="courseCategory?.photo" alt="Exterior photo of {{courseCategory?.name}}"
+        style="width: 100%; height: 300px; object-fit: cover; object-position: 50% 10%;" />
+
+    <div class="card-body">
+
+        <div class="card-title">
+            <h3>{{courseCategory?.name}}</h3>
+        </div>
+        <div class="card-text">
+            <strong>Category: <em>{{courseCategory?.category}}</em></strong>
+
+            <p>{{courseCategory?.description}}</p>
+
+            <strong>Teacher: <em>{{courseCategory?.teacher}}</em></strong>
+        </div>
+    </div>
+</div>
